@@ -1,16 +1,11 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+I earned my Master’s degree in Infectious Diseases and One Health in September 2023. Finding myself with more downtime then I have had in years, I decided to find a creative outlet to keep my mind busy and learn new things. Data visualization captivates me as a tantalizing meeting point of science, art, and communication. That feeling of seeing a good data visualization (effective, educational, and aesthetically pleasing) is unbelievably satisfying. In my opinion, data visualization is underprioritized in many scientific disciplines—shocking considering that any poster-viewer, conference-attendee, or article-reader immediately notices high-quality visualizations and is turned-off by low-effort ones. In the digital age, we are flooded with data and research, and without powerful communication skills, our work is easily lost to the sea. Moreso, visualizations allow us to expand the audience of research and of science beyond our peers. The best way to make your research impactful and educational is to learn how to present it to others.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
 
-What else do you need?
+### My goal
 
-### My story
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+This blod as a playground to experiment with data visualization, learn new techniques and tools, and practice my communication skills. I will consider this endevour a success if I learn something new with every post. If anyone finds their way to this corner of the internet, please reach out with comments or constructive criticism!
