@@ -8,4 +8,4 @@ I earned my Master’s degree in Infectious Diseases and One Health in September
 
 ### My goal
 
-This blod as a playground to experiment with data visualization, learn new techniques and tools, and practice my communication skills. I will consider this endevour a success if I learn something new with every post. If anyone finds their way to this corner of the internet, please reach out with comments or constructive criticism!
+This blog is a playground to experiment with data visualization, learn new techniques and tools, and practice my communication skills. I will consider this endevour a success if I learn something new with every post. If anyone finds their way to this corner of the internet, please reach out with comments or constructive criticism!
