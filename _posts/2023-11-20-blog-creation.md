@@ -2,11 +2,12 @@
 layout: post
 title: Launching the Blog
 subtitle: Away we go!
+cover-img: /assets/img/avatar-icon.jpg
+thumbnail-img: /assets/img/avatar-icon.png
+share-img: /assets/img/avatar-icon.jpg
 tags: [site_design]
 comments: true
 ---
-
-<br>
 
 Hi! If you're reading this, thanks for joining me at the starting line. All things need a beginning, which only makes them that much more intimidating. Perhaps, one day, this first post will be buried in a backlog so deep that no one will ever read it. But for now, it exists singularly, written by an author with conflicting desires that many people and also no one at all will care about what I write here.
 
