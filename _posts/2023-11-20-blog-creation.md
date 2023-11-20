@@ -2,9 +2,9 @@
 layout: post
 title: Launching the Blog
 subtitle: Away we go!
-cover-img: /assets/img/avatar-icon.jpg
-thumbnail-img: /assets/img/avatar-icon.png
-share-img: /assets/img/avatar-icon.jpg
+cover-img: rkhouri.github.io/assets/img/avatar-icon.png
+thumbnail-img: rkhouri.github.io/assets/img/avatar-icon.png
+share-img: rkhouri.github.io/assets/img/avatar-icon.png
 tags: [site_design]
 comments: true
 ---
