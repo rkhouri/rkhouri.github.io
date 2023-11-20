@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: Life's a Playground
+title: Data Playground
 
 # Your name to show in the footer
 author: Renée Khouri
@@ -23,7 +23,6 @@ navbar-links:
   About Me: "aboutme"
   What I'm Learning: "_posts"
   What I'm Reading: "monthlybook"
-  What I'm Cooking: "recipes"
 
 ################
 # --- Logo --- #
