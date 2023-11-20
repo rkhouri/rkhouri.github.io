@@ -9,7 +9,7 @@ tags: [site_design]
 comments: true
 ---
 
-<div align="justify">Hi! If you're reading this, thanks for joining me at the starting line. All things need a beginning, which only makes them that much more intimidating. Perhaps, one day, this first post will be buried in a backlog so deep that no one will ever read it. But for now, it exists singularly, written by an author with conflicting desires that many people and also no one at all will care about what I write here.
+{: .text-justify}Hi! If you're reading this, thanks for joining me at the starting line. All things need a beginning, which only makes them that much more intimidating. Perhaps, one day, this first post will be buried in a backlog so deep that no one will ever read it. But for now, it exists singularly, written by an author with conflicting desires that many people and also no one at all will care about what I write here.
 
 <br>
 
@@ -32,7 +32,7 @@ I chose to host this site on GitHub Pages because **1)** it is free, **2)** I ca
 
 With the website launched (though still a work in progress), I designed a simple logo, building off the theme of this website as a “playground” for me to fall in love with learning again and to make data fun for everyone! Aesthetically, a slide is an easily identifiable playground staple, and the shape requires only a few lines, making for a clean design. Conceptually, playing on a slide involves a climb, followed by a rush of exhilaration as you slide down. Then all the effort to get to the top is forgotten immediately as you run back to slide again. The process is reflective of how I view developing new skills, especially coding. The joy of success—solving a problem, building something, learning—makes the climb worth it, and you cannot help running back for more with a smile on your face.
 
-After drawing out few iterations on the backside of a draft copy of my Master’s thesis (glad to see it repurposed for good), then a digital recreation in GIMP, and boom, our first logo is live.</div>
+After drawing out few iterations on the backside of a draft copy of my Master’s thesis (glad to see it repurposed for good), then a digital recreation in GIMP, and boom, our first logo is live.
 
 
 
