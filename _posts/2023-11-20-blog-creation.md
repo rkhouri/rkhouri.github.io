@@ -10,7 +10,6 @@ comments: true
 ---
 
 <div align='justify'>Hi! If you're reading this, thanks for joining me at the starting line. All things need a beginning, which only makes them that much more intimidating. Perhaps, one day, this first post will be buried in a backlog so deep that no one will ever read it. But for now, it exists singularly, written by an author with conflicting desires that many people and also no one at all will care about what I write here.</div>
-
 <br>
 
 ## Building the Website
@@ -18,13 +17,12 @@ comments: true
 <div align='justify'>The stage of this endevour with the highest activation energy was getting the website itself up and running. With half a dozen blog posts in different states of completion before I even had a functional website,  it became a very real possibility that I would lose steam and abandon the whole project if I did not start posting soon.</div>
 
 <div align='justify'>I chose to host this site on GitHub Pages because **1)** it is free, **2)** I can employ version control as I learn, and **3)** I would like to develop some competency with GitHub. There are many great tutorials online about making a GitHub page (example linked below). So rather than sharing my entire process, I will focus on my key takeaways as someone who has never desgined a website or used GitHub.</div> 
-
+<br>
 - Zero Github knowledge is needed to launch a simple website if you follow a tutorial video. However, a GitHub crash course video was very helpful to learn some GitHub fundamentals, including navigation, basic vocabulary, and best practice for writing commit messages.
 - The GitHub Pages documentation was a helpful resource, especially when the menu options or code shown in tutorial videos were out of date.
 - Depending on the language you choose to build the website, you can learn some “bonus” skills such as Markdown, HTML, and CSS (the latter two are entirely new to me).
 - The free version of GitHub pages does not allow a website to be hosted from a private repository.
 - I am using the Beautiful Jekyll theme, created by Dean Attali. This is just about as easy as it gets to create an attractive blog in minutes. Free use of the theme requires leaving an ad on the site, but for my purposes, this is not an issue. 
-
 
 <br>
 
