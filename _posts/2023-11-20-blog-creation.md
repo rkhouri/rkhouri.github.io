@@ -8,7 +8,7 @@ tags: [site_design]
 comments: true
 ---
 
-<div align='justify'>Hi! If you're reading this, thanks for joining me at the starting line. All things need a beginning, which only makes them that much more intimidating. Perhaps, one day, this first post will be buried in a backlog so deep that no one will ever read it. But for now, it exists singularly, written by an author with conflicting desires that many people and also no one at all will care about what I write here.</div>
+<div align='justify'>Hi! Thanks for joining me at the starting line. All things need a beginning, which only makes them that much more intimidating. Perhaps, one day, this first post will be buried in a backlog so deep that no one will ever read it. But for now, it exists singularly, written by an author with conflicting desires that many people and also no one at all will care about what I write here.</div>
 
 ## Building the Website
 
@@ -29,8 +29,8 @@ comments: true
 After drawing out few iterations on the backside of a draft copy of my Master’s thesis (glad to see it repurposed for good), then a digital recreation in GIMP, and boom, our first logo is live.</div>
 
 
-
-![Crepe](https://rkhouri.github.io/assets/img/crepe.jpg)
+![logo design on paper](https://rkhouri.github.io/assets/img/blog-post-1-img-1.jpg)
+![logo design in GIMP](https://rkhouri.github.io/assets/img/blog-post-1-img-1.jpg)
 
 
 <br>
