@@ -2,7 +2,6 @@
 layout: post
 title: Launching the Blog
 subtitle: Away we go!
-cover-img: https://rkhouri.github.io/assets/img/avatar-icon.png
 thumbnail-img: https://rkhouri.github.io/assets/img/avatar-icon.png
 share-img: https://rkhouri.github.io/assets/img/avatar-icon.png
 tags: [site_design]
@@ -10,7 +9,6 @@ comments: true
 ---
 
 <div align='justify'>Hi! If you're reading this, thanks for joining me at the starting line. All things need a beginning, which only makes them that much more intimidating. Perhaps, one day, this first post will be buried in a backlog so deep that no one will ever read it. But for now, it exists singularly, written by an author with conflicting desires that many people and also no one at all will care about what I write here.</div>
-<br>
 
 ## Building the Website
 
@@ -23,8 +21,6 @@ comments: true
 - Depending on the language you choose to build the website, you can learn some “bonus” skills such as Markdown, HTML, and CSS (the latter two are entirely new to me).
 - The free version of GitHub pages does not allow a website to be hosted from a private repository.
 - I am using the Beautiful Jekyll theme, created by Dean Attali. This is just about as easy as it gets to create an attractive blog in minutes. Free use of the theme requires leaving an ad on the site, but for my purposes, this is not an issue. 
-
-<br>
 
 ## Logo Design
 
