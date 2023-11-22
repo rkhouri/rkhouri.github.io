@@ -31,9 +31,8 @@ After drawing out few iterations on the backside of a draft copy of my Master’
 <img src="https://rkhouri.github.io/assets/img/blog-post-1-img-1.jpg" width="300" />
 <img src="https://rkhouri.github.io/assets/img/blog-post-1-img-2.png" width="300" />
 
-<br>
-
 ----
+<br>
 
 ### Learning Roundup
 
@@ -41,15 +40,16 @@ After drawing out few iterations on the backside of a draft copy of my Master’
 | :------ |:--- |
 | GitHub | Markdown |
 | GitHub Pages | GIMP |
-| | Creative writing (feeling a bit rusty and repetitive after too much academic writing!) |
+| | Creative writing (feeling a bit wobbly after years of solely academic writing!) |
 
 ----
+<br>
 
 ### Resources
 
-- [How to Create a Free Website Using GitHub Pages | Tony Teaches Tech](https://www.youtube.com/watch?v=o5g-lUuFgpg)
+- [How to Create a Free Website Using GitHub Pages by Tony Teaches Tech](https://www.youtube.com/watch?v=o5g-lUuFgpg)
     - Note: The process of adding a Jekyll theme has changed slightly since this video was created. Follow the GitHub [documentation](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll) to complete this step.
-- [Git and GitHub for Beginners - Crash Course | freeCodeCamp.org](https://www.youtube.com/watch?v=RGOj5yH7evk)
+- [Git and GitHub for Beginners - Crash Course by freeCodeCamp.org](https://www.youtube.com/watch?v=RGOj5yH7evk)
 - [GitHub Pages documentation](https://docs.github.com/en/pages)
 - [Beautiful Jekyll theme](https://github.com/daattali/beautiful-jekyll)
 - [Markdown Guide](https://www.markdownguide.org/)
