@@ -28,8 +28,7 @@ comments: true
 
 After drawing out few iterations on the backside of a draft copy of my Master’s thesis (glad to see it repurposed for good), then a digital recreation in GIMP, and boom, our first logo is live.</div>
 
-
-![logo design on paper](https://rkhouri.github.io/assets/img/blog-post-1-img-1.jpg =100x20)
+<img src="https://rkhouri.github.io/assets/img/blog-post-1-img-1.jpg" width="200" />
 ![logo design in GIMP](https://rkhouri.github.io/assets/img/blog-post-1-img-2.jpg)
 
 
