@@ -18,7 +18,7 @@ comments: true
 <br>
 - Zero Github knowledge is needed to launch a simple website if you follow a tutorial video. However, a GitHub crash course video was very helpful to learn some GitHub fundamentals, including navigation, basic vocabulary, and best practice for writing commit messages.
 - The GitHub Pages documentation was a helpful resource, especially when the menu options or code shown in tutorial videos were out of date.
-- Depending on the language you choose to build the website, you can learn some “bonus” skills such as Markdown, HTML, and CSS (the latter two are entirely new to me).
+- Depending on the language you choose to build the website, you can learn some “bonus” skills such as Markdown, HTML, and CSS. I am mainly using Markdown, but with a couple of HTML workarounds (*e.g.*, changing image size). 
 - The free version of GitHub pages does not allow a website to be hosted from a private repository.
 - I am using the Beautiful Jekyll theme, created by Dean Attali. This is just about as easy as it gets to create an attractive blog in minutes. Free use of the theme requires leaving an ad on the site, but for my purposes, this is not an issue. 
 
@@ -35,10 +35,22 @@ After drawing out few iterations on the backside of a draft copy of my Master’
 
 ----
 
-### Learning Roundup:
+### Learning Roundup
 
 | New Skills | Refresher Skills |
 | :------ |:--- |
 | GitHub | Markdown |
 | GitHub Pages | GIMP |
 | | Creative writing (feeling a bit rusty and repetitive after too much academic writing!) |
+
+----
+
+### Resources
+
+- [How to Create a Free Website Using GitHub Pages | Tony Teaches Tech](https://www.youtube.com/watch?v=o5g-lUuFgpg)
+    - Note: The process of adding a Jekyll theme has changed slightly since this video was created. Follow the GitHub [documentation](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll) to complete this step.
+- [Git and GitHub for Beginners - Crash Course | freeCodeCamp.org](https://www.youtube.com/watch?v=RGOj5yH7evk)
+- [GitHub Pages documentation](https://docs.github.com/en/pages)
+- [Beautiful Jekyll theme](https://github.com/daattali/beautiful-jekyll)
+- [Markdown Guide](https://www.markdownguide.org/)
+- [5-Minute Markdown Tutorial](https://www.markdowntutorial.com/)
