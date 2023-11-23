@@ -38,7 +38,7 @@ After drawing out few iterations on the backside of a draft copy of my Master’
 | :------ |:--- |
 | GitHub | Markdown |
 | GitHub Pages | GIMP |
-| | Creative writing (feeling a bit wobbly after years of solely academic writing!) |
+| HTML | Creative writing (feeling a bit wobbly after years of solely academic writing!) |
 
 ----
 <br>
