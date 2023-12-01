@@ -526,6 +526,9 @@
       style="display: inline"
     ></g>
   </svg>
+
+  <iframe src="https://example.org" name="newiframe" width="400" height="300">
+  </iframe>
 </body>
 
 <script>
@@ -672,6 +675,7 @@
     // To generate SVG elements, need to create element within the SVG namestate (NS), otherwise it will generate as an HTML element.
     var a = document.createElementNS("http://www.w3.org/2000/svg", "a");
     a.setAttribute("href", item.video);
+    a.setAttribute("target", "newiframe");
     title = document.createElementNS("http://www.w3.org/2000/svg", "title");
     // If you use "innerText" instead of "textContent," the title is not visible in the rendered website.
     title.textContent = item.label;
