@@ -22,6 +22,16 @@
       width: 40%;
       height: 50%;
     }
+    .selected {
+      stroke: red;
+      stroke-width: 40;
+      stroke-opacity: 0.5;
+    }
+    .inactive {
+      stroke: blue;
+      stroke-width: 40;
+      stroke-opacity: 0.05;
+    }
   </style>
 </head>
 <body>
@@ -702,7 +712,20 @@
     // When adding new attributes, they can be unique to each path (values can be specificed in the array above) or a constant value.
     newNode.setAttribute("id", item.id);
     newNode.setAttribute("inkscape:label", item.label);
+    newNode.setAttribute("class", "inactive");
     newNode.setAttribute("d", item.shape);
+    // Add a function and event listener to each path so that the class changes on click.
+    function changeClass(event) {
+      // Only want one path to have the class "selected" at a time.
+      for (item of document.getElementsByTagName("path")) {
+        if (item.className.baseVal.match(/(?:^|\s)selected(?!\S)/)) {
+          item.className.baseVal = "inactive";
+        }
+        // In SVG className is an SVGAnimatedString (not a string). SVGAnimatedString has two main properties: baseVal and animVal.
+        event.target.className.baseVal = "selected";
+      }
+    }
+    newNode.addEventListener("click", changeClass);
     a.appendChild(newNode);
     canvas.appendChild(a);
   }
