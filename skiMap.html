@@ -26,11 +26,10 @@ layout: minimal
     }
     iframe {
       border: 5px solid black;
-      width: 80%;
-      height: 60%;
     }
     .parent {
       display: flex;
+      align-items: stretch;
     }
     .child {
       flex: 1;
@@ -549,12 +548,12 @@ layout: minimal
         ></g>
       </svg>
     </div>
-    <div class="child">
+    <div class="child" style="padding-top: 50px">
       <iframe
         src="https://example.org"
         name="newiframe"
-        width="400"
-        height="250"
+        width="90%"
+        height="80%"
         sandbox="allow-storage-access-by-user-activation
                  allow-scripts
                  allow-same-origin"
