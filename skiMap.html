@@ -1,8 +1,8 @@
----
-layout: minimal
----
-
 <head>
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Open Sans"
+  />
   <style>
     path {
       stroke: #ffffff;
@@ -35,6 +35,17 @@ layout: minimal
     .child {
       flex: 1;
       min-width: 350px;
+    }
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      padding: 0.1875rem;
+      background-color: #f5f5f5;
+      border-top: 1px solid #eeeeee;
+      text-align: center;
+      font-family: "Open Sans", sans-serif;
+      color: #777777;
     }
   </style>
 </head>
@@ -564,6 +575,9 @@ layout: minimal
     </div>
   </div>
 </body>
+<footer>
+  <div>Renée Khouri &nbsp;&nbsp;&bull;&nbsp;&nbsp; 2023</div>
+</footer>
 
 <script>
   const data = [
