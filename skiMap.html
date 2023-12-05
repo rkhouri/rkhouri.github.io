@@ -713,14 +713,15 @@ layout: minimal
     newNode.setAttribute("inkscape:label", item.label);
     newNode.setAttribute("class", "inactive");
     newNode.setAttribute("d", item.shape);
-    // Add a function and event listener to each path so that the class changes on click.
+    // Add a function and event listener to each path so that the changeClass function is called on click.
     function changeClass(event) {
       // Only want one path to have the class "selected" at a time.
       for (item of document.getElementsByTagName("path")) {
+        // For SVG elements, className is an SVGAnimatedString. SVGAnimatedString has two main properties: baseVal and animVal.
         if (item.className.baseVal.match(/(?:^|\s)selected(?!\S)/)) {
           item.className.baseVal = "inactive";
         }
-        // In SVG className is an SVGAnimatedString (not a string). SVGAnimatedString has two main properties: baseVal and animVal.
+        // "target" refers to the target of the event which called the function, which in this case is the elemented that was clicked.
         event.target.className.baseVal = "selected";
       }
     }
