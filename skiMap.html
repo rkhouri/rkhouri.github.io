@@ -101,7 +101,7 @@ full-width: true
     .slider.round:before {
       border-radius: 50%;
     }
-    .switchLabel {
+    .switchLabelOff {
       font-family: "Courier New", Courier, monospace;
       font-style: oblique;
       position: relative;
@@ -109,21 +109,24 @@ full-width: true
       top: 15px;
       left: 10px;
     }
-    .satteliteOff {
-      opacity: 0;
+    .switchLabelOn {
+      font-family: "Courier New", Courier, monospace;
+      font-style: oblique;
+      position: relative;
+      display: inline-block;
+      top: 15px;
+      left: 10px;
+      color: white;
     }
     .satteliteOn {
-      opacity: 100;
+      background-image: url(https://rkhouri.github.io/assets/img/SkiMap-sattelite.png);
+      background-size: contain;
     }
   </style>
 </head>
 <body>
   <div class="parent">
-    <img
-      id="satteliteImg"
-      src="https://rkhouri.github.io/assets/img/SkiMap-sattelite.png"
-    />
-    <div class="child">
+    <div id="map" class="child">
       <svg
         version="1.2"
         viewBox="600 0 2300 2200"
@@ -636,7 +639,7 @@ full-width: true
         <input type="checkbox" />
         <span class="slider round"></span>
       </label>
-      <label class="switchLabel">Sattelite View</label>
+      <label id="switchLabel" class="switchLabelOff">Sattelite View</label>
     </div>
     <div class="child" style="padding-top: 50px">
       <iframe
@@ -836,10 +839,12 @@ full-width: true
     var checkbox = document.querySelector('input[type="checkbox"]');
     checkbox.addEventListener("change", function () {
       if (checkbox.checked) {
-        document.getElementById("satteliteImg").className = "satteliteOn";
+        document.getElementById("map").className = "child satteliteOn";
+        document.getElementById("switchLabel").className = "switchLabelOn";
         console.log("Checked");
       } else {
-        document.getElementById("satteliteImg").className = "satteliteOff";
+        document.getElementById("map").className = "child";
+        document.getElementById("switchLabel").className = "switchLabelOff";
         console.log("Not checked");
       }
     });
