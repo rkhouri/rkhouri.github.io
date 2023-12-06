@@ -109,10 +109,20 @@ full-width: true
       top: 15px;
       left: 10px;
     }
+    .satteliteOff {
+      opacity: 0;
+    }
+    .satteliteOn {
+      opacity: 100;
+    }
   </style>
 </head>
 <body>
   <div class="parent">
+    <img
+      id="satteliteImg"
+      src="https://rkhouri.github.io/assets/img/SkiMap-sattelite.png"
+    />
     <div class="child">
       <svg
         version="1.2"
@@ -821,4 +831,17 @@ full-width: true
     a.appendChild(newNode);
     canvas.appendChild(a);
   }
+  // Toggle sattelite image opacity to be visible when toggle switch in is "on" position
+  document.addEventListener("DOMContentLoaded", function () {
+    var checkbox = document.querySelector('input[type="checkbox"]');
+    checkbox.addEventListener("change", function () {
+      if (checkbox.checked) {
+        document.getElementById("satteliteImg").className = "satteliteOn";
+        console.log("Checked");
+      } else {
+        document.getElementById("satteliteImg").className = "satteliteOff";
+        console.log("Not checked");
+      }
+    });
+  });
 </script>
