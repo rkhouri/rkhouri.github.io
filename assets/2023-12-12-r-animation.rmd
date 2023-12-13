@@ -1,5 +1,9 @@
 ---
-output: html_document
+title: Animating plots in R
+output:
+  github_document:
+    html_preview: false
+always_allow_html: true
 ---
 
 ## Uses of Animation in R
@@ -59,7 +63,7 @@ ggplot(gapminder, aes(pop, lifeExp, colour = country)) +
   scale_x_log10() +
   facet_wrap(~continent) +
   theme_bw() +
-  labs(title = "Year: {closest_state}", x = "Population", y = "Life Expectancy") +
+  labs(title = "Year: {frame_time}", x = "Population", y = "Life Expectancy") +
   transition_time(year) +
   ease_aes("cubic-in-out")
 ```
