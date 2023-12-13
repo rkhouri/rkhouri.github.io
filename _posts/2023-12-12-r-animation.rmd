@@ -4,7 +4,10 @@ title: Animating plots in R
 subtitle: Enchancing ggplot2 capabilities!
 tags: [R, tidyverse]
 comments: true
-output: github_document
+output:
+  github_document:
+    html_preview: false
+always_allow_html: true
 ---
 
 ## Uses of Animation in R
