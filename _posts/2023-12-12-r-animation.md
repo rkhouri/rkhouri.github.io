@@ -1,3 +1,11 @@
+---
+layout: post
+title: Animating plots in R
+subtitle: Enchancing ggplot2 capabilities!
+tags: [R, tidyverse]
+comments: true
+---
+
 Animating plots in R
 ================
 
