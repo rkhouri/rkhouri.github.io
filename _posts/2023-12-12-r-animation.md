@@ -45,7 +45,8 @@ available at [Gapminder.org](https://www.gapminder.org/data/),
 specifically: life expectancy, GDP per capita, and population for 142
 countries every five years (1952 to 2007).
 
-{: .warning-note} **Warning** from the package author: “this package
+{: .warning-note}
+**Warning** from the package author: “this package
 exists for the purpose of teaching and making code examples. It is an
 excerpt of data found in specific spreadsheets on Gapminder.org circa 2010. It is not a definitive source of socioeconomic data and I don’t
 update it. Use other data sources if it’s important to have the current
@@ -59,7 +60,8 @@ best estimate of these statistics.”
 and David Robinson) is an extension to ggplot2 which adds new “grammar”
 to define animation in the final plot.
 
-{: .box-note} **Note:** The original iteration of gganimate (versions up
+{: .box-note}
+**Note:** The original iteration of gganimate (versions up
 to and including v0.1.1) is now
 [deprecated](https://github.com/thomasp85/gganimate/releases/tag/v0.1.1)
 and code written for the old API will not work with the new iteration of
@@ -252,7 +254,8 @@ web-based (HTML) visualizations.
 (v1.12.0-2); [`plotly`](https://cran.r-project.org/web/packages/plotly/)
 (v4.10.3)
 
-{: .box-note} **Note:** gifski is a renderer, which is required if you
+{: .box-note}
+**Note:** gifski is a renderer, which is required if you
 want the output of gganimate to be a gif rather each frame as a seperate
 image. If you prefer a video output over a gif, you can use an alternate
 renderer (such as the `av` package) and specify it in your code to
