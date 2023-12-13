@@ -45,7 +45,7 @@ available at [Gapminder.org](https://www.gapminder.org/data/),
 specifically: life expectancy, GDP per capita, and population for 142
 countries every five years (1952 to 2007).
 
-{: .warning-note}
+{: .box-warning}
 **Warning** from the package author: “this package
 exists for the purpose of teaching and making code examples. It is an
 excerpt of data found in specific spreadsheets on Gapminder.org circa 2010. It is not a definitive source of socioeconomic data and I don’t
@@ -124,7 +124,7 @@ ggplot(gapminder, aes(pop, lifeExp, colour = country)) +
   scale_x_log10() +
   facet_wrap(~continent) +
   theme_bw() +
-  labs(title = "Year: {closest_state}", x = "Population", y = "Life Expectancy") +
+  labs(title = "Year: {frame_time}", x = "Population", y = "Life Expectancy") +
   transition_states(year, transition_length = 2, state_length = 4) +
   ease_aes("cubic-in-out") +
   exit_fade(alpha = 0)
