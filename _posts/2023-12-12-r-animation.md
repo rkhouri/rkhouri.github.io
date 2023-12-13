@@ -82,7 +82,7 @@ ggplot(gapminder, aes(pop, lifeExp, colour = country)) +
   theme_bw()
 ```
 
-![](https://rkhouri.github.io/_posts/2023-12-12-r-animation_files/figure-gfm/gapminder%20static-1.png)<!-- -->
+![](https://rkhouri.github.io/assets/2023-12-12-r-animation_files/figure-gfm/gapminder%20static-1.png)<!-- -->
 
 <br>
 
@@ -104,7 +104,7 @@ ggplot(gapminder, aes(pop, lifeExp, colour = country)) +
   ease_aes("cubic-in-out")
 ```
 
-![](https://rkhouri.github.io/_posts/2023-12-12-r-animation_files/figure-gfm/gganimate%20timeframe-1.gif)<!-- -->
+![](https://rkhouri.github.io/assets/2023-12-12-r-animation_files/figure-gfm/gganimate%20timeframe-1.gif)<!-- -->
 
 <br>
 
@@ -128,7 +128,7 @@ ggplot(gapminder, aes(pop, lifeExp, colour = country)) +
   exit_fade(alpha = 0)
 ```
 
-![](https://rkhouri.github.io/_posts/2023-12-12-r-animation_files/figure-gfm/gganimate%20stateframe-1.gif)<!-- -->
+![](https://rkhouri.github.io/assets/2023-12-12-r-animation_files/figure-gfm/gganimate%20stateframe-1.gif)<!-- -->
 
 A full list of gganimate functions to customize aesthetics can be found
 [here](https://gganimate.com/reference/index.html).
