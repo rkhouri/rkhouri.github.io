@@ -101,7 +101,7 @@ ggplot(gapminder, aes(pop, lifeExp, colour = country)) +
   scale_x_log10() +
   facet_wrap(~continent) +
   theme_bw() +
-  labs(title = "Year: {closest_state}", x = "Population", y = "Life Expectancy") +
+  labs(title = "Year: {frame_time}", x = "Population", y = "Life Expectancy") +
   transition_time(year) +
   ease_aes("cubic-in-out")
 ```
@@ -124,7 +124,7 @@ ggplot(gapminder, aes(pop, lifeExp, colour = country)) +
   scale_x_log10() +
   facet_wrap(~continent) +
   theme_bw() +
-  labs(title = "Year: {frame_time}", x = "Population", y = "Life Expectancy") +
+  labs(title = "Year: {closest_state}", x = "Population", y = "Life Expectancy") +
   transition_states(year, transition_length = 2, state_length = 4) +
   ease_aes("cubic-in-out") +
   exit_fade(alpha = 0)
