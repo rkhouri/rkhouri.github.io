@@ -12,13 +12,13 @@ comments: true
 
 ## Building the Website
 
-<div align='justify'>With half a dozen blog posts in different states of completion before I even had a functional website, it became a very real possibility that I would lose steam and abandon the whole project if I did not launch the site and start posting soon. I chose to host this site on GitHub Pages because <b>1)</b> it is free, <b>2)</b> I can employ version control as I learn, <b>3)</b> there are abundant online resources for troubleshooting, and <b>4)</b> I would like to develop some GitHub competency. There are many great tutorials online about making a GitHub page (example linked below). So rather than sharing my entire process, I will focus on my key takeaways as someone who has never desgined a website or used GitHub.</div> 
+<div align='justify'>With half a dozen blog posts in different states of completion before I even had a functional website, it became a very real possibility that I would lose steam and abandon the whole project if I did not launch the site and start posting soon. I chose to host this site on GitHub Pages because <b>1)</b> it is free, <b>2)</b> I can employ version control as I learn, <b>3)</b> there are abundant online resources for troubleshooting, and <b>4)</b> I would like to develop some GitHub competency. There are many great tutorials online about making a GitHub page (example linked below). So rather than sharing my entire process, I will focus on my key takeaways as someone who has never desgined a website or used GitHub.</div>
 
 - Zero Github knowledge is needed to launch a simple website if you follow a tutorial video. However, a GitHub crash course video was very helpful to learn some GitHub fundamentals, including navigation, basic vocabulary, and best practice for writing commit messages.
 - The GitHub Pages documentation was a helpful resource, especially when the menu options or code shown in tutorial videos were out of date.
-- Depending on the language you choose to build the website, you can learn some “bonus” skills such as Markdown, HTML, and CSS. I am mainly using Markdown, but with a couple of HTML workarounds (*e.g.*, changing image size). 
+- Depending on the language you choose to build the website, you can learn some “bonus” skills such as Markdown, HTML, and CSS. I am mainly using Markdown, but with a couple of HTML workarounds (_e.g._, changing image size).
 - The free version of GitHub pages does not allow a website to be hosted from a private repository.
-- I am using the Beautiful Jekyll theme, created by Dean Attali. This is just about as easy as it gets to create an attractive blog in minutes. Free use of the theme requires leaving an ad on the site, but for my purposes, this is not an issue. 
+- I am using the Beautiful Jekyll theme, created by Dean Attali. This is just about as easy as it gets to create an attractive blog in minutes. Free use of the theme requires leaving an ad on the site, but for my purposes, this is not an issue.
 
 ## Logo Design
 
@@ -29,24 +29,26 @@ After drawing out few iterations on the backside of a draft copy of my Master’
 <img src="https://rkhouri.github.io/assets/img/blog-post-1-img-1.jpg" height="250" />
 <img src="https://rkhouri.github.io/assets/img/blog-post-1-img-2.png" height="250" />
 
-----
+---
+
 <br>
 
 ### Learning Roundup
 
-| New Skills | Refresher Skills |
-| :------ |:--- |
-| GitHub | Markdown |
-| GitHub Pages | GIMP |
-| HTML | Creative writing (feeling a bit wobbly after years of solely academic writing!) |
+| New Skills   | Refresher Skills                                                                |
+| :----------- | :------------------------------------------------------------------------------ |
+| GitHub       | Markdown                                                                        |
+| GitHub Pages | GIMP                                                                            |
+| HTML         | Creative writing (feeling a bit wobbly after years of solely academic writing!) |
 
-----
+---
+
 <br>
 
 ### Resources
 
 - [How to Create a Free Website Using GitHub Pages by Tony Teaches Tech](https://www.youtube.com/watch?v=o5g-lUuFgpg)
-    - Note: The process of adding a Jekyll theme has changed slightly since this video was created. Follow the GitHub [documentation](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll) to complete this step.
+  - Note: The process of adding a Jekyll theme has changed slightly since this video was created. Follow the GitHub [documentation](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll) to complete this step.
 - [Git and GitHub for Beginners - Crash Course by freeCodeCamp.org](https://www.youtube.com/watch?v=RGOj5yH7evk)
 - [GitHub Pages documentation](https://docs.github.com/en/pages)
 - [Beautiful Jekyll theme](https://github.com/daattali/beautiful-jekyll)
