@@ -4,7 +4,7 @@ title: Animating plots in R
 subtitle: Enchancing ggplot2 capabilities!
 tags: [R, tidyverse]
 comments: true
-output: html_document
+output: github_document
 ---
 
 ## Uses of Animation in R
@@ -64,9 +64,9 @@ ggplot(gapminder, aes(pop, lifeExp, colour = country)) +
   scale_x_log10() +
   facet_wrap(~continent) +
   theme_bw() +
-  labs(title = 'Year: {frame_time}', x = 'Population', y = 'Life Expectancy') +
+  labs(title = "Year: {closest_state}", x = "Population", y = "Life Expectancy") +
   transition_time(year) +
-  ease_aes('cubic-in-out')
+  ease_aes("cubic-in-out")
 ```
 
 <br>
@@ -80,9 +80,9 @@ ggplot(gapminder, aes(pop, lifeExp, colour = country)) +
   scale_x_log10() +
   facet_wrap(~continent) +
   theme_bw() +
-  labs(title = 'Year: {closest_state}', x = 'Population', y = 'Life Expectancy') +
+  labs(title = "Year: {closest_state}", x = "Population", y = "Life Expectancy") +
   transition_states(year, transition_length = 2, state_length = 4) +
-  ease_aes('cubic-in-out') +
+  ease_aes("cubic-in-out") +
   exit_fade(alpha = 0)
 ```
 
@@ -112,11 +112,10 @@ p <- ggplot(gapminder, aes(pop, lifeExp, colour = country)) +
   facet_wrap(~continent) +
   theme_bw()
 
-ggplotly(p) %>% 
+ggplotly(p) %>%
   layout(showlegend = FALSE)
-  # We no longer need the hide legend syntax in ggplot, because it is overriden by plotly. 
-  # Instead, we can opt to hide the legend in the ggplotly syntax.
-
+# We no longer need the hide legend syntax in ggplot, because it is overriden by plotly.
+# Instead, we can opt to hide the legend in the ggplotly syntax.
 ```
 
 <br>
@@ -130,12 +129,12 @@ p <- ggplot(gapminder, aes(pop, lifeExp, colour = country)) +
   scale_x_log10() +
   facet_wrap(~continent) +
   theme_bw() +
-  labs(x = 'Population', y = 'Life Expectancy') 
+  labs(x = "Population", y = "Life Expectancy")
 
 # Using pipes (%>%) here, which is a dplyr function
-ggplotly(p) %>% 
-  layout(showlegend = FALSE) %>% 
-  animation_slider(currentvalue = list(prefix = "Source: UN POP, Year: ")) %>% 
+ggplotly(p) %>%
+  layout(showlegend = FALSE) %>%
+  animation_slider(currentvalue = list(prefix = "Source: UN POP, Year: ")) %>%
   animation_button(x = 0.9, y = 0.4)
 ```
 
