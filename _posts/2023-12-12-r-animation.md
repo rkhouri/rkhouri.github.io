@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Animating plots in R
-subtitle: Enchancing ggplot2 capabilities!
+subtitle: Enhancing ggplot2 capabilities!
 tags: [R, tidyverse]
 comments: true
 ---
@@ -15,7 +15,7 @@ paths to achieve the same goal. In this post, I will explore two
 packages (`gganimate` and `plotly`), which can be used to animate plots
 created with [`ggplot2`](https://ggplot2.tidyverse.org/), one of the
 packages in the amazing *tidyverse*. If you are unfamiliar with
-`ggplot2`, I recommend you begin by checking out some of the resources
+`ggplot2`, I recommend you begin by checking out some of the [resources](#resources)
 linked at the bottom of the page!
 
 <br>
@@ -274,15 +274,16 @@ arguments used to change the renderer for `gganimate` can be found
 | New Skills         | Refresher Skills |
 | :----------------- | :--------------- |
 | Animation in R     | Plotting in R    |
-| GitHub             | Markdown         |
+| GitHub Pages       | Markdown         |
 | Visual Studio Code | Creative writing |
 
 
-I love how much life that even a simple animation breathes into the plots, and I also like it as a streamlined way to present data from a time series or from multiple classes without needing a separate plot for each year or class.
-Learning how to animate plots in R was relatively easy because I already knew how to navigate R and have a good handle on ggplot grammar. I would say it had a great payout for the amount of time invested into it, and I really appreciate that both packages use ggplot2, which is such a powerful and customizable tool on its own for data viz. For someone with no foundational knowledge, there would certainly be a steeper learning curve.
-I did run into a pretty frustrating knowledge gap when I tried to integrate processes that I am very comfortable with (creating an R Markdown file in RStudio) into a new process (version control and hosting content on GitHub Pages). Implementing version control is possible directly from RStudio, and there are some great guides about this (e.g., [How to Combine R-Markdown and GitHub](https://medium.com/geekculture/how-to-combine-r-markdown-and-github-7bc4fedd929a)). However, I am using Visual Studio Code (VS Code) for anything related to this site that doesn't require R. I quickly realized that making local changes to the same GitHub repository from two different programs (RStudio and VS Code) was a recipe for disaster. I also didn't want to only make this blog post using RStudio, because I wanted to use some helpful VS Code extensions such as "Git Graph" for source control, "Prettier" for code formatting, and the built-in option to preview markdown files. So, I installed the "R" and the "vscode-pandoc" extensions. This allowed me to create, edit, and knit (render) R Markdown files in VS Code. Of course, nothing good can be easy, so I was ramming my head against the wall
+I love how much bang for your buck you get from animating plots. With only a few lines of code added to R, you can add a huge amount of value to visualizations. I also like that animation can streamline data, particularly when you have a third or fourth variable that you want to present without needing numerous panels or plots. Learning how to animate plots in R was relatively easy because I already knew how to navigate R and have a good handle on ggplot grammar. I would say it had a great payout for the amount of time invested into it, and I really appreciate that both `gganimate` and `plotly` build off of `ggplot2`, which is a powerful and flexible tool on its own for data viz, and a package that most R users are already familiar with. For someone with no foundational knowledge of R or ggplot, there would certainly be a steeper learning curve.
+
+I did run into a pretty frustrating knowledge gap when I tried to integrate processes that I am very comfortable with (creating an R Markdown file in RStudio) into a new process (version control and hosting content on GitHub Pages). Implementing version control is possible directly from RStudio, and there are some great guides about this (e.g., [How to Combine R-Markdown and GitHub](https://medium.com/geekculture/how-to-combine-r-markdown-and-github-7bc4fedd929a)). However, I am using Visual Studio Code (VS Code) for anything related to this site that doesn't require R. I quickly realized that making local changes to the same GitHub repository from two different programs (RStudio and VS Code) was a recipe for disaster. I also didn't want to only make this blog post using RStudio, because I wanted to use some helpful VS Code extensions such as "Git Graph" for source control, "Prettier" for code formatting, and the built-in option to preview markdown files. So, I installed the ["R"](https://code.visualstudio.com/docs/languages/r) and the "vscode-pandoc" extensions to be able to create, edit, and knit (render) R Markdown (rmd) files in VS Code. I also discovered and opted to use the ["github_document"](https://rmarkdown.rstudio.com/github_document_format.html) output option for rmd fils. Of course, nothing good can be easy, so I was ramming my head against the wall because 
 
 From what I could glean online, there is some conflict between my site (some posts online suggest it's a problem with Github or Jekyll itself, specifically Ruby). It seems that, for security reasons, GitHub Pages does not like markdown files that have JavaScript elements. When I knit my rmd file as an HTML document and tried uploading that as a blog post (my site template, beautiful-jekyll, treats files in the "_blog" folder in a special way), my site would not even deploy, which makes me think that there is a conflict with that code and the script or Ruby that is foundational to beautiful-jekyll.
+
 I got an idea [here](https://community.plotly.com/t/how-to-display-plotly-graph-on-github-pages/44398) to save the plotly graphs as standalone HTML files and to upload those files to my repo instead of including the full HTML/js code in the markdown file. Using this guide to [Saving and embedding HTML](https://plotly-r.com/saving.html) and this article on [Export plotly Graph as PNG, JPEG & HTML File in R (Example)](https://statisticsglobe.com/export-interactive-plotly-graph-png-jpeg-html-r), I was able to save the plots (which plotly generates as HTML widgets) as stand-alone HTML files, which I uploaded to my repository in a separate folder and linked to iframes in my markdown. The site deploys fine when the plotly HTML code is not in the "_blogs" folder, so I hope I won't find any issues with the site as I go along! All in all, it's not a great solution, because I ended up going back to RStudio to export the plots. However, the solution seems functional and isn't worth sinking more time into right now because I don't know if I will ever need to add more plotly graphs to this site in the future.
 
 ---
@@ -306,14 +307,10 @@ I got an idea [here](https://community.plotly.com/t/how-to-display-plotly-graph-
     function names. They may be overwhelming if you are a first-time
     user.
 
-<br>
-
 - R Graphics and Animation:
   - [R Graphics Cookbook](https://r-graphics.org/) by Winston Chang
   - [gganimate Resources](https://gganimate.com/)
   - [plotly Resources](https://plotly.com/r/getting-started/)
-
-<br>
 
 - Finding and using public databases:
   - Built-in data sets in R’s [`dataset`
