@@ -20,7 +20,7 @@ _Source:_ Free data from UN POP via GAPMINDER.ORG (License: CC-BY 4.0). Retrieve
 
 _Dataset description:_ `gapminder` is a helpful tool for teaching data wrangling and visualization in R. It includes an excerpt of the data available at [Gapminder.org](https://www.gapminder.org/data/), specifically: life expectancy, GDP per capita, and population for 142 countries every five years (1952 to 2007).
 
-{: .warning-note}
+{: .box-warning}
 **Warning** from the package author: "this package exists for the purpose of teaching and making code examples. It is an excerpt of data found in specific spreadsheets on Gapminder.org circa 2010. It is not a definitive source of socioeconomic data and I don’t update it. Use other data sources if it’s important to have the current best estimate of these statistics."
 
 <br>
