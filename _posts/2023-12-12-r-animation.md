@@ -41,7 +41,7 @@ available at [Gapminder.org](https://www.gapminder.org/data/),
 specifically: life expectancy, GDP per capita, and population for 142
 countries every five years (1952 to 2007).
 
-[!WARNING]
+[!WARNING]  
 From the package author: “this package
 exists for the purpose of teaching and making code examples. It is an
 excerpt of data found in specific spreadsheets on Gapminder.org circa 2010.
