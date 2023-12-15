@@ -2,6 +2,7 @@
 layout: post
 title: Animating plots in R
 subtitle: Enhancing ggplot2 capabilities!
+thumbnail-img: https://rkhouri.github.io/assets/2023-12-12-r-animation_files/figure-gfm/gganimate%20timeframe-1.gif
 tags: [R, tidyverse]
 comments: true
 ---
