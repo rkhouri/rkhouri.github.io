@@ -564,7 +564,7 @@ title: Ski Trail Map
     // Make a new variable where we can store the id of the most recently clicked path. This allows us to implement "deselection" when a path is clicked a second time.
     var lastClickedPath;
     // Create a function that will change the class of paths from "selected" to "inactive".
-    function changeClass(event) {
+    function handlePathClick(event) {
       let shouldSkipSelectionAction = false;
       // Only want one path to have the class "selected" at a time.
       for (item of document.getElementsByClassName("selected")) {
@@ -599,7 +599,7 @@ title: Ski Trail Map
     }
 
     // Add an event listener to each path so that the changeClass function is called on click of these paths.
-    newNode.addEventListener("click", changeClass);
+    newNode.addEventListener("click", handlePathClick);
     a.appendChild(newNode);
     bufferCanvas.appendChild(a);
   }
