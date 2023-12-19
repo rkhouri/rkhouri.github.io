@@ -546,8 +546,6 @@ title: Ski Trail Map
   for (item of dataBuffer) {
     // To generate SVG elements, need to create element within the SVG namestate (NS), otherwise it will generate as an HTML element.
     var a = document.createElementNS("http://www.w3.org/2000/svg", "a");
-    a.setAttribute("href", item.video);
-    a.setAttribute("target", "newiframe");
     title = document.createElementNS("http://www.w3.org/2000/svg", "title");
     // If you use "innerText" instead of "textContent," the title is not visible in the rendered website.
     title.textContent = item.label;
@@ -562,6 +560,7 @@ title: Ski Trail Map
     newNode.setAttribute("label", item.label);
     newNode.setAttribute("class", "inactive");
     newNode.setAttribute("d", item.shape);
+    newNode.setAttribute("video", item.video);
     // Create a function that will change the path class, and the label shown above the video on click.
     function handlePathClick(event) {
       let shouldSkipSelectionAction = false;
@@ -581,6 +580,9 @@ title: Ski Trail Map
           // Remove the label when path is deselected
           var trailLabel = document.getElementById("trailLabel");
           trailLabel.innerText = "";
+          // Reset the video
+          document.getElementById("iframe").src =
+            "https://rkhouri.github.io/skiMap-instructions";
         }
       }
 
@@ -591,6 +593,8 @@ title: Ski Trail Map
         var trailLabel = document.getElementById("trailLabel");
         trailLabel.innerText =
           "Nom de Piste: " + event.target.getAttributeNode("label").value;
+        document.getElementById("iframe").src =
+          event.target.getAttributeNode("video").value;
       }
     }
 
