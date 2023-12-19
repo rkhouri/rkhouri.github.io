@@ -561,31 +561,38 @@ title: Ski Trail Map
     var lastClickedPath;
     // Create a function that will change the class of paths from "selected" to "inactive".
     function changeClass(event) {
+      let shouldSkipSelectionAction = false
       // Only want one path to have the class "selected" at a time.
       for (item of document.getElementsByClassName("selected")) {
         // For SVG elements, className is an SVGAnimatedString. SVGAnimatedString has two main properties: baseVal and animVal.
         // "target" refers to the target of the event which called the function, which in this case is the path that was clicked.
 
         if (event.target.id !== item.id) {
-          item.className.baseVal = "inactive";
           // If you click on a new path, the previous path will become "inactive".
+          item.className.baseVal = "inactive";
+        } else {
+          // If you click on the same path twice, it will revert to "inactive" on the second click.
+          event.target.className.baseVal = "inactive";
+          // Skip setting a selection (i.e. ignore this click)
+          shouldSkipSelectionAction = true
+          // Reset the video
+          var iframe = document.getElementsByTagName("iframe");
+          iframe.src = "https://rkhouri.github.io/skiMap-instructions";
+          var trailLabel = document.getElementById("trailLabel");
+          trailLabel.innerText = "Nom de Piste: " ;
         }
       }
-      if (
-        event.target.id === lastClickedPath &&
-        event.target.className.baseVal === "selected"
-      ) {
-        event.target.className.baseVal = "inactive";
-        // If you click on the same path twice, it will revert to "inactive" on the second click.
-      } else {
-        event.target.className.baseVal = "selected";
+
+      if (!shouldSkipSelectionAction) {
         // If the path was not targeted on the previous click, the path will become "selected".
+        event.target.className.baseVal = "selected";
+      var trailLabel = document.getElementById("trailLabel");
+      trailLabel.innerText = "Nom de Piste: " + event.target.getAttributeNode("label").value ;
       }
-      // Store the id of the element that was targeted by the event (i.e. the most recently clicked path).
-      lastClickedPath = event.target.id;
-      // Call function to change the label text to match that path that was most recently clicked.
-      changeLabel();
+
+      // Change the label text to match that path that was most recently clicked.
     }
+
     // Add an event listener to each path so that the changeClass function is called on click of these paths.
     newNode.addEventListener("click", changeClass);
     a.appendChild(newNode);
@@ -604,9 +611,4 @@ title: Ski Trail Map
       }
     });
   });
-  // Function to change the label text to match that path that was most recently clicked.
-  function changeLabel(){
-  var trailLabel = document.getElementById("trailLabel");
-  trailLabel.innerText = "Nom de Piste: " + document.getElementById(lastClickedPath).getAttributeNode("label").value ;
-}
 </script>
