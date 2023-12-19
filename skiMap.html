@@ -563,20 +563,20 @@ title: Ski Trail Map
     newNode.setAttribute("video", item.video);
     // Create a function that will change the path class, and the label shown above the video on click.
     function handlePathClick(event) {
-      let shouldSkipSelectionAction = false;
+      let shouldPerformSelection = true;
       // Only want one path to have the class "selected" at a time.
       for (item of document.getElementsByClassName("selected")) {
         // For SVG elements, className is an SVGAnimatedString. SVGAnimatedString has two main properties: baseVal and animVal.
         // "target" refers to the target of the event which called the function, which in this case is the path that was clicked.
-
+        console.log("Looking at", event.target.id);
         if (event.target.id !== item.id) {
           // If you click on a new path, the previous path will become "inactive".
-          item.className.baseVal = "inactive";
+          item.setAttribute("class", "inactive");
         } else {
           // If you click on the same path twice in a row, it will revert to "inactive" on the second click.
-          event.target.className.baseVal = "inactive";
+          event.target.setAttribute("class", "inactive");
           // Skip setting a selection (i.e. ignore this click)
-          shouldSkipSelectionAction = true;
+          shouldPerformSelection = false;
           // Remove the label when path is deselected
           var trailLabel = document.getElementById("trailLabel");
           trailLabel.innerText = "";
@@ -586,9 +586,9 @@ title: Ski Trail Map
         }
       }
 
-      if (!shouldSkipSelectionAction) {
+      if (shouldPerformSelection) {
         // If the path was not targeted on the previous click, the path will become "selected".
-        event.target.className.baseVal = "selected";
+        event.target.setAttribute("class", "selected");
         // Change the label text to match the path that was most recently clicked.
         var trailLabel = document.getElementById("trailLabel");
         trailLabel.innerText =
