@@ -214,6 +214,7 @@ title: Ski Trail Map
       <div class="child" style="padding-top: 5px; padding-bottom: 5px">
         <iframe
           src="https://rkhouri.github.io/skiMap-instructions"
+          id="iframe"
           name="newiframe"
           width="100%"
           height="100%"
@@ -561,9 +562,7 @@ title: Ski Trail Map
     newNode.setAttribute("label", item.label);
     newNode.setAttribute("class", "inactive");
     newNode.setAttribute("d", item.shape);
-    // Make a new variable where we can store the id of the most recently clicked path. This allows us to implement "deselection" when a path is clicked a second time.
-    var lastClickedPath;
-    // Create a function that will change the class of paths from "selected" to "inactive".
+    // Create a function that will change the path class, and the label shown above the video on click.
     function handlePathClick(event) {
       let shouldSkipSelectionAction = false;
       // Only want one path to have the class "selected" at a time.
@@ -575,13 +574,11 @@ title: Ski Trail Map
           // If you click on a new path, the previous path will become "inactive".
           item.className.baseVal = "inactive";
         } else {
-          // If you click on the same path twice, it will revert to "inactive" on the second click.
+          // If you click on the same path twice in a row, it will revert to "inactive" on the second click.
           event.target.className.baseVal = "inactive";
           // Skip setting a selection (i.e. ignore this click)
           shouldSkipSelectionAction = true;
-          // Reset the video
-          var iframe = document.getElementsByTagName("iframe");
-          iframe.src = "https://rkhouri.github.io/skiMap-instructions";
+          // Remove the label when path is deselected
           var trailLabel = document.getElementById("trailLabel");
           trailLabel.innerText = "";
         }
@@ -590,12 +587,11 @@ title: Ski Trail Map
       if (!shouldSkipSelectionAction) {
         // If the path was not targeted on the previous click, the path will become "selected".
         event.target.className.baseVal = "selected";
+        // Change the label text to match the path that was most recently clicked.
         var trailLabel = document.getElementById("trailLabel");
         trailLabel.innerText =
           "Nom de Piste: " + event.target.getAttributeNode("label").value;
       }
-
-      // Change the label text to match that path that was most recently clicked.
     }
 
     // Add an event listener to each path so that the changeClass function is called on click of these paths.
