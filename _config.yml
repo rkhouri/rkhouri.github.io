@@ -23,7 +23,7 @@ navbar-links:
   About Me: "aboutme"
   What I'm Reading: "monthlybook"
   Projects: 
-    - Interactive Trail Map:"https://renee.khouri.ca/skimap"
+    - Interactive Trail Map: "https://renee.khouri.ca/skimap"
 
 ################
 # --- Logo --- #
