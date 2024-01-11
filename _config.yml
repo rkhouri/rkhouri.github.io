@@ -22,7 +22,8 @@ author: Renée Khouri
 navbar-links:
   About Me: "aboutme"
   What I'm Reading: "monthlybook"
-  Projects: "/_projects/skiMap"
+  Projects: 
+    - Interactive Trail Map:"skimap"
 
 ################
 # --- Logo --- #
