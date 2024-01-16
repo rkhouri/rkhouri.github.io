@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Animating plots in R
+title: Dynamic plots with R
 subtitle: Enhancing ggplot2 capabilities!
 thumbnail-img: https://rkhouri.github.io/assets/2023-12-12-r-animation_files/figure-gfm/gganimate%20timeframe-1.gif
 tags: [R, tidyverse]
 comments: true
 ---
 
-Though not appropriate to every medium, animated plots can breathe life
+Though not appropriate to every medium, dynamic plots can breathe life
 into a website or powerpoint. I have always wanted to play around with
 plot animation, but it has never been compatible with the medium I
 primarily use **R** for (reports and journal articles), so this post
@@ -23,8 +23,8 @@ linked at the bottom of the page!
 
 ## Data Selection
 
-With this exercise, I wanted to emphasize the ability of animation to
-highlight data that changes over a series of “subsets.” The first use
+With this exercise, I wanted to highlight how dynamic plots can
+emphasize data that changes over a series of “subsets.” The first use
 that jumps to mind is annual data, which is appropriate because it is
 ordinal—meaning it has an order that matters (e.g., 2001 is preceded by
 2000 and succeeded by 2002)—and also discrete—meaning there is a logical
@@ -229,14 +229,12 @@ features](https://plotly.com/ggplot2/configuration-options/).
 ## Summary
 
 Animation is a simple yet effective way to improve viewer engagement and
-understanding when plots are presented in a digital medium. For
-animations made in R, there are two package options to animate plots
+understanding when plots are presented in a digital medium. To create dynamic visualizations with 
+R, there are two main packages which can be used to animate plots
 made with `ggplot2`. The `gganimate` package expands on ggplot2 grammar
 to introduce animation, which can be rendered as a gif or video. The
 `plotly` package can also be used to animate plots created with ggplot2,
-but the output is an HTML widget (benefit: the plots are automatically
-made interactive by the `plotly` package; downside: plots are only
-viewable on the web).
+but the output is an HTML widget (which is interactive but only dynamic on a website).
 
 ---
 
