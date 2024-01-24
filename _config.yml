@@ -21,7 +21,8 @@ author: Renée Khouri
 
 navbar-links:
   About Me: "aboutme"
-  What I'm Reading: "monthlybook"
+  What I'm Reading:
+    - 2023: "reading-2023"
   Projects: 
     - Interactive Trail Map: "https://renee.khouri.ca/skimap"
 
