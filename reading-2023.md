@@ -1,9 +1,9 @@
 ---
 layout: page
-title: 2023 Reading
+title: Reading Round-Up | 2023
 ---
 
-# 2023 Reading Round-Up
+# Favorite Books of the Year 
 
 In 2023, I made it a goal to read at least one book every month ***for fun***. I was so fortunate to have the time to read some delightful books. My 12 favorite, in no particular order, were:
 
@@ -16,9 +16,9 @@ In 2023, I made it a goal to read at least one book every month ***for fun***. I
 - [*The Happiness Equation*](https://www.goodreads.com/book/show/22571656-the-happiness-equation) by Neil Pasricha. Though the author's advice won't apply to everyone, it's a great read for anyone who has some flexibility in their life/career (i.e., not tightly constrained by financial or family situations). 
 - [*The Sun and the Star*](https://www.goodreads.com/book/show/63028719-the-sun-and-the-star) by Rick Riordan. Rick Riordan has released a book almost every year since 2005, meaning I've been reading his books for nearly two decades. Though this book wasn't my favorite entry in his Camp Half-Blood Chronicles franchise, it gets bonus points for joining me during my post-graduation vacation and for being part of a cherished franchise. 
 
-<img src="https://rkhouri.github.io/assets/img/sun-and-the-star.jpg" height="250" />
+    <img src="https://rkhouri.github.io/assets/img/sun-and-the-star.jpg" height="250" />
 
-Reading *The Sun and the Star* on the banks of the Isar River in Germany.
+    Reading *The Sun and the Star* on the banks of the Isar River in Germany.
 
 
 - [*Throne of Glass*](https://www.goodreads.com/book/show/76703559-throne-of-glass) by Sarah J. Maas. High fantasy that reads quickly, and, with all eight books in the series already released, you don't even need to wait years on a cliffhanger.
@@ -31,9 +31,9 @@ Reading *The Sun and the Star* on the banks of the Isar River in Germany.
 
 In 2023, my book choices were dominated by fantasy (with about a dozen fantasy books not making the top 12). This was no surprise--I find fantasy books are the easiest to pick up and relax with after a long day, or to tackle in busy environments like airports or trains. However, I would like to diversify a bit more next year.
 
-- At the end of 2022, I received a list of book suggestions by African authors, as well as the first book on the list, *The First Woman*. The gift of a book is so precious, and the gift of a list of suggestions was all the more appreciated. I look forward to working through more this list in the coming year!
+- Last year, a firend gifted me a list of book suggestions by African authors, as well as the first book on the list, *The First Woman*. The gift of a book is so precious, and the gift of a list of suggestions was all the more appreciated. I look forward to working through more this list in the coming year!
 
-<img src="https://rkhouri.github.io/assets/img/african-author-recs.jpg" height="250" />
+    <img src="https://rkhouri.github.io/assets/img/african-author-recs.jpg" height="250" />
 
 - Because I consider science to be my "work," I typically avoid reading scientific nonfiction in my free time. However, when I read *And the Band Played On* I was absolutely enraptured and enjoyed learning about the AIDS epidemic from a journalistic and social point of view, rather than being focused solely on the virology or immunology. There is a lot to learn about public health and science from other fields (i.e. history, social studies, economics, geography, religious studies), especially how politics, culture, and geography impact discovery, research, and control.
 
