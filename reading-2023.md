@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Reading Round-Up | 2023
+title: 2023 Reading
 ---
 
 # Favorite Books of the Year 
