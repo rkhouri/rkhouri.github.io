@@ -289,7 +289,7 @@ In R, individual colors can be called by name, number, or hexadecimal code. Thou
 
 Though I was familiar with all of the tools described in this post, finding resources to link to this post ended up teaching me several new tricks. For example, I discovered the cvdPlot function in the  `colorBlindness` package, which can be used to simulate color-vision-deficiency of finished plots. Until now, I had only used the package to see if my color selections were distinguishable to colorblind viewers, but seeing the final plots actually makes it much easier to know how readable or unreadable the plots would be. 
 
-On a more general note, I wanted to truncate the lengthy output of an rmd chunk, which led me to the [rmarkdown cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/hook-truncate.html), where I learned how to edit the default knittr hook. The resulting code can be found in the rmd document used to created this page, found in my GitHub [repository](https://rkhouri.github.io/assets/).
+On a more general note, I wanted to truncate the lengthy output of an rmd chunk, which led me to the [rmarkdown cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/hook-truncate.html), where I learned how to edit the default knittr hook. The resulting code can be found in the rmd document used to created this page, found in my GitHub [repository](https://github.com/rkhouri/rkhouri.github.io/tree/master/assets).
 
 ---
 
