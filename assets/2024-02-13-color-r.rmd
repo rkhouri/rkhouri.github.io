@@ -16,9 +16,9 @@ Effective data visualization requires as much art as it does science; color choi
 
 4. Color palettes from packages
 
-<br>
-
 ---
+
+<br>
 
 ## Base R - Individual Colors
 
@@ -46,13 +46,13 @@ knitr::knit_hooks$set(output = function(x, options) {
 colors()
 ```
 
-<br>
-
 ---
+
+<br>
 
 ## Selecting Colors by Hex Codes
 
-The hexadecimal color system uses a 6-digit code to describe color. Red, green, and blue are each represented by 2 digits (#rrggbb). Hex codes allow for precise color selection, which is particularly useful when designing visualizations that will be featured on a poster, website, report, or digital dashboard. In this way, the plot can be easily integrated into the overall color palette (*i.e.* by directly matching colors used in the text, logos, header/footer accents, etc.). For example, my site footer color is #6038d3 and my logo uses #6038d3 and #d33847, so a visualization that will be hosted on this site could use these colors to showcase that the design was made with this site in mind. Many companies have specific color palettes pre-selected, which keeps company materials and presentations looking cohesive.
+The hexadecimal color system uses a 6-digit code to describe color. Red, green, and blue are each represented by 2 digits (#rrggbb). Hex codes allow for precise color selection, which is particularly useful when designing visualizations that will be featured on a poster, website, report, or digital dashboard. In this way, the figure can be easily integrated into the overall color palette of the medium to showcase that it was designed for a specific purpose. You may have noticed that many large companies use specific color palettes, which keeps company materials and presentations looking cohesive across offices and the web.
 
 There are many online tools for identifying hex codes from images or websites, and most design tools (*e.g.*, [Canva](https://bloggingguide.com/canva-color-picker/)) include built-in color ID tools. To find the hex code for a base R color, you can visit this [helpful site](https://r-charts.com/colors/) or run the following code directly in your R console.
 
@@ -101,7 +101,7 @@ However, more often than not, a visualization will require more than one color. 
 
 ## Base R - Color Palettes
 
-The `grDevices` package (included in base R) defines numerous color palettes. Possibly the most [infamous](https://colorspace.r-forge.r-project.org/articles/endrainbow.html) is the rainbow() palette. However, as this [blog](https://developer.r-project.org/Blog/public/2019/04/01/hcl-based-color-palettes-in-grdevices/) explains, RGB/HSV-based colors are more difficult for humans to perceive than hue-chroma-luminance (HCL) colors. So, in 2019, many [HCL palettes](https://developer.r-project.org/Blog/public/2019/04/01/hcl-based-color-palettes-in-grdevices/) were added to `grDevices`. 
+The `grDevices` package (included in base R) defines numerous color palettes. Possibly the most [infamous](https://colorspace.r-forge.r-project.org/articles/endrainbow.html) is the rainbow() palette. In 2019, the palette options were improved with the addition of numerous [HCL (hue-chroma-luminance) palettes](https://developer.r-project.org/Blog/public/2019/04/01/hcl-based-color-palettes-in-grdevices/) to supplent the exising RGB/HSV (hus-saturation-value)-based palettes `grDevices`. As the [release blog](https://developer.r-project.org/Blog/public/2019/04/01/hcl-based-color-palettes-in-grdevices/) explains, RGB/HSV-based colors are more difficult for humans to perceive than HCL colors. 
 
 Starting from any existing palette, you can create a custom palette based on the number of colors needed. For example, creating a 3-color palette from the "heat.colors" palette to distinguish a categorical variable with 3 categories (*e.g.*, the species variable of the iris dataset), as shown below. Mapping a color palette to *categorical* variables in base R requires transforming the "variable of interest in an integer that will be used to call the appropriate color." Mapping a color palette to a *continuous* variable in base R requires manually dividing the variable of interest into bins. Plot examples adapted from [R Graph Gallery](https://r-graph-gallery.com/13-scatter-plot.html). An easier method for mapping a color palette to variable, using `ggplot2`, is explored in the section [R Packages Related to Color](#r-packages-related-to-color).
 
@@ -203,13 +203,13 @@ Each type of palette is called by a unique function when plotting with ggplot2:
 
 <br>
 
-Even more color palettes can be found in the `cpt-city` [package](https://CRAN.R-project.org/package=cptcity), which was excluded from `paletteer` due to the sheer number of palettes (**7140!**). The cpt-cty project is an archive of colour gradients for cartography, technical illustration and design; the R package is maintained by [Sergio Ibarra-Espinosa](https://github.com/ibarraespinosa/cptcity).
+Even more color palettes can be found in the `cpt-city` [package](https://CRAN.R-project.org/package=cptcity), which was excluded from `paletteer` due to the sheer number of palettes (**7140!**). The cpt-ctiy [project](http://soliton.vm.bytemark.co.uk/pub/cpt-city/) is an archive of colour gradients for cartography, technical illustration and design; the R package is maintained by [Sergio Ibarra-Espinosa](https://github.com/ibarraespinosa/cptcity).
 
 <br>
 
 `colorBlindness` (by Jianhong Ou). 
 
-This package contains several useful tools to ensure your visualizations are accessible to viewers with deuteranopia and protanopia (two forms of red-green colorblindness). In addition, you can stimulate what your plots will look like when desaturated, which represents viewers with achromatopsia or if your visualizations are printed in B&W.
+This package contains several useful tools to ensure your visualizations are accessible to viewers colorblindness, namely: deuteranopia and protanopia (two forms of red-green colorblindness) and achromatopsia (total absence of color perception). In addition, stimulating the appearance of desaturated plots (which represents viewers with achromatopsia) is a helpful way to check if your viz will be legible when printed in B&W.
 
 - Color-vision-deficiency (CVD) simulation is possible with the "cvdPlot" function. This function was adapted from the `colorblindr` package, written by Claire D. McWhite and Claus O. Wilke. Note that this function is only compatible with a ggplot grob, you cannot use a plot made with base R.
 
@@ -235,21 +235,6 @@ This package contains several useful tools to ensure your visualizations are acc
 
   colorBlindness::displayAllColors(rainbow(n = 10))
   colorBlindness::displayAllColors(paletteer_c("viridis::inferno", n = 10))
-  ```
-
-<br>
-
-- You can also use this package to correct your colors and replace them with more accessible choices if needed. Again, this will only work with ggplot grobs or a selection of colors.
-
-  ```{r}
-  p <- ggplot(data = iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) +
-    geom_point() +
-    scale_color_paletteer_d("lisa::OskarSchlemmer")
-  
-  cvdPlot(p)
-    
-  cvdPlot(replacePlotColor(p))
-
   ```
 
 <br>
@@ -302,7 +287,7 @@ Color choice in data viz:
 
 Modifying color in R:
 
-- https://r-graph-gallery.com/colors.html
+- [Changing base R plot colors](https://r-graph-gallery.com/colors.html)
 - [Changing ggplot2 colors](https://r-graph-gallery.com/ggplot2-color.html)
 - [R color cheatsheet](https://www.nceas.ucsb.edu/sites/default/files/2020-04/colorPaletteCheatsheet.pdf)
 
