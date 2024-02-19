@@ -1,7 +1,8 @@
 /* Transition animation to trigger upon page load.
 Adapted from YouTube tutorial by dcode */
 
-body {
+/* Target the entire page except the navbar and the footer*/
+.header-section, div[role=main] {
     animation: transitionIn 0.75s;
 }
 
