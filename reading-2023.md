@@ -16,10 +16,10 @@ In 2023, I made it a goal to read at least one book every month ***for fun***. I
 - [*The Happiness Equation*](https://www.goodreads.com/book/show/22571656-the-happiness-equation) by Neil Pasricha. Though the author's advice won't apply to everyone, it's a great read for anyone who has some flexibility in their life/career (i.e., not tightly constrained by financial or family situations). 
 - [*The Sun and the Star*](https://www.goodreads.com/book/show/63028719-the-sun-and-the-star) by Rick Riordan. Rick Riordan has released a book almost every year since 2005, meaning I've been reading his books for nearly two decades. Though this book wasn't my favorite entry in his Camp Half-Blood Chronicles franchise, it gets bonus points for joining me during my post-graduation vacation and for being part of a cherished franchise. 
 
-<figure>
-    <img src="https://rkhouri.github.io/assets/img/sun-and-the-star.jpg" width = 500 />
-      <figcaption>Reading *The Sun and the Star* on the banks of the Isar River in Germany.</figcaption>
-</figure>
+    <figure>
+        <img src="https://rkhouri.github.io/assets/img/sun-and-the-star.jpg" width = 500 />
+        <figcaption>Reading <i>The Sun and the Star</i> on the banks of the Isar River in Germany.</figcaption>
+    </figure>
 
 - [*Throne of Glass*](https://www.goodreads.com/book/show/76703559-throne-of-glass) by Sarah J. Maas. High fantasy that reads quickly, and, with all eight books in the series already released, you don't even need to wait years on a cliffhanger.
 - [*The First Woman*](https://www.goodreads.com/book/show/48734888-the-first-woman) by Jennifer Nansubuga Makumbi. Later released as *A Girl Is a Body of Water*. Set in 1970's-80's Uganda, this story is, in the authors words, an exploration of "the idea that feminism comes from the West, and therefore, feminism is destroying [Ugandan] culture. So I needed to locate feminism in my culture...All of that is geared towards showing my culture that we had feminist thought before the Western feminism came. If you think Western feminism is wrong, OK, let's get rid of it, but let's look at what we have here. In the end, you're going to find that they intersect."
