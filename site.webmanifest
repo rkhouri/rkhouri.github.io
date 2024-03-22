@@ -20,5 +20,6 @@
     ],
     "theme_color": "#6038d3",
     "background_color": "#6038d3",
-    "display": "standalone"
+    "display": "standalone",
+    "start_url": "https://renee.khouri.ca"
 }
