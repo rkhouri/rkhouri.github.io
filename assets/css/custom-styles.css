@@ -2,7 +2,6 @@
 Adapted from YouTube tutorial by dcode */
 
 /* Target the entire page except the navbar and the footer*/
-/*
 .header-section, div[role=main] {
     animation: transitionIn 0.75s;
 }
@@ -18,4 +17,3 @@ Adapted from YouTube tutorial by dcode */
         transform:rotateX(0deg);
     }
 }
-*/
