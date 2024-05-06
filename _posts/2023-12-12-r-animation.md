@@ -29,7 +29,7 @@ that jumps to mind is annual data, which is appropriate because it is
 ordinal—meaning it has an order that matters (e.g., 2001 is preceded by
 2000 and succeeded by 2002)—and also discrete—meaning there is a logical
 way to subset the data. Animation can be a good way to emphasize how
-certain variable changes over time.
+certain variables change over time.
 
 *Data:* World Population and Life Expectancy by Country, 1952–2007.
 
