@@ -37,7 +37,7 @@ certain variables change over time.
 Retrieved through the `gapminder` package in **R**.
 
 *Dataset description:* `gapminder` is a helpful tool for teaching data
-wrangling and visualization in R. It includes an excerpt of the data
+wrangling and visualization with R. It includes an excerpt of the data
 available at [Gapminder.org](https://www.gapminder.org/data/),
 specifically: life expectancy, GDP per capita, and population for 142
 countries every five years (1952 to 2007).
@@ -272,12 +272,12 @@ arguments used to change the renderer for `gganimate` can be found
 
 | New Skills         | Refresher Skills |
 | :----------------- | :--------------- |
-| Animation in R     | Plotting in R    |
+| Animation with R     | Plotting with R    |
 | GitHub Pages       | Markdown         |
 | Visual Studio Code | Creative writing |
 
 
-I love how much bang for your buck you get from animating plots. With only a few lines of code added to R, you can add a huge amount of value to visualizations. I also like that animation can streamline data, particularly when you have a third or fourth variable that you want to present without needing numerous panels or plots. Learning how to animate plots in R was relatively easy because I already knew how to navigate R and have a good handle on ggplot grammar. I would say it had a great payout for the amount of time invested into it, and I really appreciate that both `gganimate` and `plotly` build off of `ggplot2`, which is a powerful and flexible tool on its own for data viz, and a package that most R users are already familiar with. For someone with no foundational knowledge of R or ggplot, there would certainly be a steeper learning curve.
+I love how much bang for your buck you get from animating plots. With only a few lines of code added to R, you can add a huge amount of value to visualizations. I also like that animation can streamline data, particularly when you have a third or fourth variable that you want to present without needing numerous panels or plots. Learning how to animate plots with R was relatively easy because I already knew how to navigate R and have a good handle on ggplot grammar. I would say it had a great payout for the amount of time invested into it, and I really appreciate that both `gganimate` and `plotly` build off of `ggplot2`, which is a powerful and flexible tool on its own for data viz, and a package that most R users are already familiar with. For someone with no foundational knowledge of R or ggplot, there would certainly be a steeper learning curve.
 
 I did run into a pretty frustrating knowledge gap when I tried to integrate processes that I am very comfortable with (creating an R Markdown file in RStudio) into a new process (version control and hosting content on GitHub Pages). Implementing version control is possible directly from RStudio, and there are some great guides about this (e.g., [How to Combine R-Markdown and GitHub](https://medium.com/geekculture/how-to-combine-r-markdown-and-github-7bc4fedd929a)). However, I am using Visual Studio Code (VS Code) for anything related to this site that doesn't require R. I quickly realized that making local changes to the same GitHub repository from two different programs (RStudio and VS Code) was a recipe for disaster. I also didn't want to only make this blog post using RStudio, because I wanted to use some helpful VS Code extensions such as "Git Graph" for source control, "Prettier" for code formatting, and the built-in option to preview markdown files. So, I installed the ["R"](https://code.visualstudio.com/docs/languages/r) and the "vscode-pandoc" extensions to be able to create, edit, and knit (render) R Markdown (rmd) files in VS Code. I also discovered and opted to use the ["github_document"](https://rmarkdown.rstudio.com/github_document_format.html) output option for rmd files, which creates GitHub-compatible markdown (md) files after knitting an rmd file. When I first tried to knit my rmd document from VS code, I received an error that pandoc was not present, even though pandoc was installed on my computer. I found a similar problem on [Stack OVerflow](https://stackoverflow.com/questions/74018894/error-pandoc-version-1-12-3-or-higher-is-required-in-vscode-but-works-in-r-s), which suggested manually adding the path to the folder housing pandoc to the settings.json file on vscode. I went into RStudio to find the complete path to pandoc, then added the path as follows: 
 
@@ -315,7 +315,7 @@ The next hurdle was a conflict between the plotly-generated HTML widgets and my 
   - [plotly Resources](https://plotly.com/r/getting-started/)
 
 - Finding and using public databases:
-  - Built-in data sets in R’s [`dataset`
+  - Data sets included with base R’s [`dataset`
     package](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/00Index.html)
   - [Open Data Network](https://www.opendatanetwork.com/)
   - [Summary of CC
