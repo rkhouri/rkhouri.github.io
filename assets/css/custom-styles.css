@@ -19,10 +19,12 @@ Adapted from YouTube tutorial by dcode */
 }
 
 
-/* Limit size of code blocks to fit viewport to allow pages with
-code blocks to scale responsively to screen size */
+/* Set width of code blocks to fit viewport to allow pages with
+code blocks to scale responsively to screen size. Set a max-width
+to limit width of code blocks on desktop pages */
 /* 'highlight' is a class that contains elements that define the background of code blocks*/
 
 .highlight pre {
     width: 100vw;
+    max-width: 100%;
 }
