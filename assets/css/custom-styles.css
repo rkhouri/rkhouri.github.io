@@ -14,6 +14,15 @@ Adapted from YouTube tutorial by dcode */
 
     to {
         opacity: 1;
-        transform:rotateX(0deg);
+        transform: rotateX(0deg);
     }
+}
+
+
+/* Limit size of code blocks to fit viewport to allow pages with
+code blocks to scale responsively to screen size */
+/* 'highlight' is a class that contains elements that define the background of code blocks*/
+
+.highlight pre {
+    width: 100vw;
 }
