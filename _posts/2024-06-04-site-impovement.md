@@ -1,7 +1,7 @@
 ---
 layout: post
 title: General Site Improvements
-subtitle: Page Animation, Favicon, and Responsive Design.
+subtitle: Page Animation, Favicon, and Responsive Design!
 thumbnail-img: 
 cover-img:
 tags: [css, html, site_design]
@@ -111,8 +111,8 @@ div[role=main], .header-section {
 The final result is a subtle change to the site appearance when a new page loads.
 
 
-<div>
-    <iframe id="video" width=650 height=400 src="https://rkhouri.github.io/assets/img/site-improvements/site-animation.mp4">
+<div class="container-iframe">
+    <iframe id="video" class="responsive-iframe" src="https://rkhouri.github.io/assets/img/site-improvements/site-animation.mp4">
     </iframe>
 </div>
 
@@ -140,7 +140,7 @@ Now my site has an icon when viewed in all browsers, and also when saved as a sh
 
 Beautiful Jekyll already incorporates responsive design elements (*i.e.*, the site adjusts to fit differently-sized screens in order to keep the page content readable whether you view it on a desktop or mobile device). But I notice that, unlike the home page, About Me page, and the Reading List page, some of my blog posts do not scale well to a mobile layout. Originally I thought this was due to a difference in the base code between post layouts and other page layouts, but my first blog post resizes properly on a phone screen, so there must be something else causing this.
 
-<img width = 100vw src="../assets\img\site-improvements\mobile-view-before.jpg">
+<img width = 60% src="../assets\img\site-improvements\mobile-view-before.jpg">
 
 After searching for a common thread between the pages that are not responsive to screen size, I believe the culprits are code samples. Based on this theory, I want to set the width of my code blocks to see if this resolves the issue. After some troubleshooting, I find that the lowest level that I can edit to adjust the width of the code block is the `<pre>` element with the class "highlight".
 
