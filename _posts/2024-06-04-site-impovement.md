@@ -51,13 +51,13 @@ site-css:
  Using a Youtube [tutorial](https://www.youtube.com/watch?v=zWB219zf1og) created by [dcode](https://www.youtube.com/c/dcode-software), I added a subtle animation which appears every time a new page of my site loads.
 
  Following this tutorial, the process is very straightforward.
+
  1) Create or add to an existing CSS file, then define:
     1) An animation that transitions between two "key frames" (in other words, how the page should look at the start and end of the animation).
     2) The duration of the transition.
     3) The target(s) for the animation (which part of your site pages should be animated?).
  2) In the site HTML code, link the CSS file to the page headers.
 
-<br>
 
 The code generally follows this structure:
 
@@ -79,8 +79,6 @@ The code generally follows this structure:
 }
 ```
 
-<br>
-
 When a new page loads, it triggers an animation that transitions the page from one keyframe (fully transparent, slightly rotated) to another (fully opaque, no rotation).  
 
 The "className" should match the element you want to target with the animation—I choose to target the entire body element, and set the animation duration to 0.75 seconds.
@@ -95,11 +93,8 @@ body {
 }
 
 ```
-<br>
 
 The animation works, but I find that, when the entire body is targeted, something looks off. One possible explanation is that when the navigation bar is animated, it gives me the impression that the site is lagging and loading slowly.
-
-<br>
 
 To make the animation more subtle, I test the appearance of the animation if it only targets the main content and the headers (which includes the page title and subtitle); the remaining site components (navigation bar and footer bar) will load normally. In the Beautiful Jekyll site code, the main content of each page is defined with the "role" attribute: `role="main"`. The page headers are defined with the class attribute: `class="header-section"`. With this information, I can specify that the transition animation should only apply to these parts of the page.
 
@@ -113,8 +108,6 @@ div[role=main], .header-section {
 }
 ```
 
-<br>
-
 The final result is a subtle change to the site appearance when a new page loads.
 
 
@@ -123,9 +116,9 @@ The final result is a subtle change to the site appearance when a new page loads
     </iframe>
 </div>
 
-<br>
-
 ----
+
+<br>
 
 # Adding Favicons
 
@@ -138,6 +131,8 @@ Now my site has an icon when viewed in all browsers, and also when saved as a sh
 <img src="../assets\img\site-improvements\favicon-pin.JPG"></img>
 <img src="../assets\img\site-improvements\favicon-tab.JPG"></img>
 <img src="../assets\img\site-improvements\favicon-preview.png"></img>
+
+----
 
 <br>
 
@@ -165,11 +160,11 @@ So, I return to my custom CSS file in my site directory and change the default w
 }
 ```
 
-Now code blocks look great on my phone! However, when I switch back to a desktop screen, the code chunks are waayyy too wide because I have not set a max width. 
+Now code blocks look great on my phone! However, when I switch back to a desktop screen, the code chunks are waayyy too wide. 
 
 ![alt text](../assets/img/site-improvements/no-max-width-code-blocks.JPG)
 
-<br>
+ This can be mitigated by setting a max width for code blocks.
 
 ```css
 .highlight pre {
@@ -180,6 +175,8 @@ Now code blocks look great on my phone! However, when I switch back to a desktop
 
 Now, code blocks do not affect the ability of my site pages to scale responsively to device screen size!
 
+----
+
 <br>
 
 # Summary
@@ -189,6 +186,8 @@ Templates are a great tool to launch a new site through GitHub Pages. Numerous J
 - New to CSS and HTML? Work through introductory tutorials to get comfortable with the basics before diving into site modifications.
 - Lacking inspiration? YouTube tutorials can help get the juices flowing. 
 - Want to make your site look more professional across all browsers and devices? Add a favicon using the RealFaviconGenerator tool, and make sure your site incorporates responsive design elements.
+
+----
 
 <br>
 
